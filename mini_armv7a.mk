@@ -12,13 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/mini.mk)
+$(call inherit-product, build/target/product/generic.mk)
 
-PRODUCT_NAME := mini_armv7a
-PRODUCT_DEVICE := armv7-a
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := Mini for armv7-a
+PRODUCT_NAME := toradex
+PRODUCT_DEVICE := apalis-imx6
+PRODUCT_BRAND := Toradex
+PRODUCT_MODEL := apalis imx6
 
 # default is nosdcard, S/W button enabled in resource
 DEVICE_PACKAGE_OVERLAYS := device/generic/armv7-a/overlay
-PRODUCT_CHARACTERISTICS := nosdcard
